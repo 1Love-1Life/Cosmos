@@ -1,7 +1,7 @@
 
 
 var config = {
-    name: 'Friendy-Bot',
+    name: 'Moonlight ~',
     userid: function () {
         return toId(this.name);
     },
@@ -117,7 +117,7 @@ var parse = {
         if (isFlooding) {
             if (pointVal < 2) {
                 pointVal = 2;
-                muteMessage = ', flooding';
+                muteMessage = ', Please do not flood the chat';
             }
         }
         // moderation for caps (over x% of the letters in a line of y characters are capital)
@@ -125,7 +125,7 @@ var parse = {
         if (capsMatch && toId(message).length > MIN_CAPS_LENGTH && (capsMatch.length >= Math.floor(toId(message).length * MIN_CAPS_PROPORTION))) {
             if (pointVal < 1) {
                 pointVal = 1;
-                muteMessage = ', caps';
+                muteMessage = ', Please do not abuse caps';
             }
         }
         // moderation for stretching (over x consecutive characters in the message are the same)
@@ -133,7 +133,7 @@ var parse = {
         if (stretchMatch) {
             if (pointVal < 1) {
                 pointVal = 1;
-                muteMessage = ', stretching';
+                muteMessage = ', Please do not excessively repeat characters';
             }
         }
         if (pointVal > 0 && !(time - this.chatData[user][room].lastAction < ACTION_COOLDOWN)) {
