@@ -4364,3 +4364,12 @@ exports.Formats = [
 		ruleset: ['Pokemon', 'HP Percentage Mod', 'Cancel Mod']
 	}
 ];
+
+try {
+	var customFormats = require('./customformats.js').Formats;
+	if (customFormats && customFormats instanceof Array) {
+		exports.Formats = customFormats.concat(exports.Formats);
+	}
+} catch (e) {
+	console.log("Warning: unable to load customformats: " + e);
+}
