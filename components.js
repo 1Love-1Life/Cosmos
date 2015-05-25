@@ -205,7 +205,8 @@ user.updateIdentity();
         buffer.drivers = buffer.drivers.join(', ');
         buffer.voices = buffer.voices.join(', ');
 
-        self.sendReplyBox('**Moonlight Server Staff** \n\n **Owner** \n Aerosam \n\n **Administrator** \n Guts Overr fear');
+       this.sendReplyBox('<b><i>Moonlight Server Staff</b></i> <br/><br/> <u><b>Owner</u></b><br>AeroSam<br><br><u><b>Administrators</u></b><br>Guts Overr Fear');
+
     },
 
     regdate: function (target, room, user, connection) {
