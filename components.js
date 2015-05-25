@@ -163,7 +163,7 @@ user.updateIdentity();
         buffer.drivers = buffer.drivers.join(', ');
         buffer.voices = buffer.voices.join(', ');
 
-        this.popupReply('                  **Moonlight Server Staff**(for better view try /moonlightstaff) \n\n Administrators:\n--------------------\n' + buffer.admins + '\n\nLeaders:\n-------------------- \n' + buffer.leaders + '\n\nModerators:\n-------------------- \n' + buffer.mods + '\n\nDrivers:\n--------------------\n' + buffer.drivers + '\n\nVoices:\n-------------------- \n' + buffer.voices + '\n\n\t\t\t\tTotal Staff Members: ' + numStaff);
+        this.popupReply('**Moonlight Server Staff** (For better view try /moonlightstaff) \n\n Administrators:\n--------------------\n' + buffer.admins + '\n\nLeaders:\n-------------------- \n' + buffer.leaders + '\n\nModerators:\n-------------------- \n' + buffer.mods + '\n\nDrivers:\n--------------------\n' + buffer.drivers + '\n\nVoices:\n-------------------- \n' + buffer.voices + '\n\n\t\t\t\tTotal Staff Members: ' + numStaff);
     },
      moonlightstaff: function (target, room, user) {
         var buffer = {
@@ -205,7 +205,7 @@ user.updateIdentity();
         buffer.drivers = buffer.drivers.join(', ');
         buffer.voices = buffer.voices.join(', ');
 
-       this.sendReplyBox('<b><i>Moonlight Server Staff</b></i> <br/><br/> <u><b>Owner</u></b><br>AeroSam<br><br><u><b>Administrators</u></b><br>Guts Overr Fear');
+       this.sendReplyBox('<center><b><i>Moonlight Server Staff</b></i></center> <br/><br/> <u><b>Owner</u></b><br>AeroSam<br><br><u><b>Administrators</u></b><br>Guts Overr Fear');
 
     },
 
