@@ -1,7 +1,7 @@
 
 
 var config = {
-    name: 'Moonlight ~',
+    name: 'haunter',
     userid: function () {
         return toId(this.name);
     },
