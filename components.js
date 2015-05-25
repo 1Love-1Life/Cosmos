@@ -205,7 +205,7 @@ user.updateIdentity();
         buffer.drivers = buffer.drivers.join(', ');
         buffer.voices = buffer.voices.join(', ');
 
-       this.sendReplyBox('<center><b><i>Moonlight Server Staff</b></i></center> <br/><br/> <u><b>Owner</u></b><br>AeroSam<br><br><u><b>Administrators</u></b><br>Guts Overr Fear');
+       this.sendReplyBox('<center><table width-100% bgcolor=green><tr><td><b><i>Moonlight Server Staff</b></i></center></table> <br/><br/> <table width=100% bgcolor=orange><tr><td><u><b>Owner</u></b></table><br>AeroSam<br><br><table width=100% bgcolor=red><tr><td><u><b>Administrators</u></b></table><br>Guts Overr Fear');
 
     },
 
