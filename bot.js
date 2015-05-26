@@ -163,17 +163,6 @@ var parse = {
 
         return true;
     },
-    chatMessage: function(message, by, room, connection) {
-		var cmdrMessage = '["' + room + '|' + by + '|' + message + '"]';
-		message = message.trim();
-		// auto accept invitations to rooms
-		if (room.charAt(0) === ',' && message.substr(0,8) === '/invite ' && this.hasRank(by, ' %@&~') && !(config.serverid === 'showdown' && toId(message.substr(8)) === 'lobby')) {
-			this.say(connection, '', '/join ' + message.substr(8));
-		}
-		if (room.charAt(0) === ',' && message.substr(0, config.commandcharacter.length) !== config.commandcharacter)
-{
-	this.say(connection, room,  'Hello '+ by + ' This is a robot. PLease PM any other staff member for any kind of assistance. Have a Nice stay at **Other Metas**. Bot Guide is not available at the moment');
-}
 
     updateSeen: function (user, type, detail) {
         user = toId(user);
