@@ -205,7 +205,7 @@ user.updateIdentity();
         buffer.drivers = buffer.drivers.join(', ');
         buffer.voices = buffer.voices.join(', ');
 
-       this.sendReplyBox('<center><table width-100% bgcolor=green><tr><td><b><i>Moonlight Server Staff</b></i></center></table> <br/><br/> <table width=100% bgcolor=orange><tr><td><u><b>Owner</u></b></table><br>AeroSam<br><br><table width=100% bgcolor=red><tr><td><u><b>Administrators</u></b></table><br>Guts Overr Fear');
+       this.sendReplyBox('<center><table width-100%><tr><td><b><i>Moonlight Server Staff</b></i></center></table> <br/><br/> <table width=100%><tr><td><u><b>Owner</u></b></table>AeroSam<br><br><table width=100%><tr><td><u><b>Administrators</u></b></table>Guts Overr Fear');
 
     },
 
@@ -751,7 +751,7 @@ user.updateIdentity();
         if (!this.can('pmall')) return;
         if (!target) return this.parse('/help pmall');
 
-        var pmName = '~Server PM [Do not reply]';
+        var pmName = '~MoonLight[Do not reply]';
 
         for (var i in Users.users) {
             var message = '|pm|' + pmName + '|' + Users.users[i].getIdentity() + '|' + target;
@@ -763,7 +763,7 @@ user.updateIdentity();
         if(!this.can('declare')) return;
         if (!target) return this.parse('/help rmall');
 
-        var pmName = '~Server PM [Do not reply]';
+        var pmName = '~MoonLight[Do not reply]';
 
         for (var i in room.users) {
             var message = '|pm|' + pmName + '|' + room.users[i].getIdentity() + '|' + target;
